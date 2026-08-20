@@ -580,9 +580,7 @@ img {
 }
 
 .awaits-section {
-  width: min(1500px, calc(100% - 120px));
-  margin-left: 120px;
-  margin-right: 0;
+  width: 100%;
   min-height: 420px;
   display: grid;
   grid-template-columns: minmax(0, 37%) minmax(0, 63%);
@@ -840,6 +838,12 @@ img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .awaits-copy.texture-section {
+    padding-left: 12%;
+  }
+}
+
 @media (max-width: 767px) {
   .page-shell {
     width: calc(100% - 48px);
@@ -1073,11 +1077,9 @@ img {
   }
 
   .awaits-section {
-    width: 100%;
     min-height: 350px;
     display: block;
     position: relative;
-    margin: 0;
     background: url("assets/hawas-ring.JPG") center top / auto 430px no-repeat;
   }
 
