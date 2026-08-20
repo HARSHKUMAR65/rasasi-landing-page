@@ -120,7 +120,7 @@ img {
   position: relative;
   isolation: isolate;
   min-height: 790px;
-  background: url("assets/hawas-ring.jpg") center / cover no-repeat;
+  background: url("assets/hawas-ring.jpg") center bottom / cover no-repeat;
 }
 
 .hero-shade {
@@ -537,21 +537,21 @@ img {
 }
 
 .custom-checkbox {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   border: 2px solid #fff;
+  background: transparent;
   display: grid;
   place-items: center;
 }
 
 .consent-row input:checked+.custom-checkbox::after {
   content: "";
-  width: 10px;
-  height: 6px;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transform: rotate(-45deg) translate(1px, -1px);
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
 }
+
 
 .consent-row input:focus-visible+.custom-checkbox {
   outline: 2px solid var(--gold);
