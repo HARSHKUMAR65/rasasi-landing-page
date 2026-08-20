@@ -205,6 +205,7 @@ img {
   background: linear-gradient(90deg, #C09058 0%, #E0C090 50%, #503018 100%);
   cursor: pointer;
   transition: filter .2s ease, transform .2s ease;
+  font-weight: 400 !important;
 }
 
 .gold-button:hover {
@@ -903,12 +904,13 @@ img {
 
   .hero-copy>p {
     margin-bottom: 24px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
   }
 
   .hero-copy>p+p {
     margin-top: 25px;
+    font-size: 15px;
   }
 
   .hero-whatsapp {
@@ -917,6 +919,7 @@ img {
     margin-top: 10px;
     padding-left: 18px;
     padding-right: 18px;
+    font-size: 15px;
   }
 
   .lead-form {
@@ -1009,7 +1012,7 @@ img {
   }
 
   .partner-item p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
   }
 
@@ -1240,7 +1243,7 @@ img {
 
   .section-title,
   .partnership-title {
-    font-size: 28px;
+    font-size: 41px;
   }
 
   .faq-heading {
