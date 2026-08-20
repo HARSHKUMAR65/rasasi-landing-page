@@ -581,6 +581,8 @@ img {
 
 .awaits-section {
   width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   min-height: 420px;
   display: grid;
   grid-template-columns: minmax(0, 37%) minmax(0, 63%);
