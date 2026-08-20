@@ -573,7 +573,7 @@ img {
 }
 
 .awaits-section {
-  min-height: 360px;
+  min-height: 420px;
   display: grid;
   grid-template-columns: 37% 63%;
   background: var(--black);
@@ -604,8 +604,8 @@ img {
 }
 
 .awaits-image {
-  background: url("assets/hawas-ring.jpg") center / cover no-repeat;
-  height: 360px;
+  background: url("assets/hawas-ring.jpg") center 40% / cover no-repeat;
+  height: 420px;
 }
 
 .faq-section {
