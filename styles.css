@@ -120,7 +120,13 @@ img {
   position: relative;
   isolation: isolate;
   min-height: 790px;
-  background: url("assets/hawas-ring.jpg") center bottom / cover no-repeat;
+  background: #000 url("assets/hawas-ring.jpg") center bottom / cover no-repeat;
+}
+
+@media (min-width: 1440px) {
+  .hero-section {
+    background-size: auto 100%;
+  }
 }
 
 .hero-shade {
@@ -567,9 +573,9 @@ img {
 }
 
 .awaits-section {
-  min-height: 343px;
+  min-height: 360px;
   display: grid;
-  grid-template-columns: 46% 64%;
+  grid-template-columns: 37% 63%;
   background: var(--black);
 }
 
@@ -599,7 +605,7 @@ img {
 
 .awaits-image {
   background: url("assets/hawas-ring.jpg") center / cover no-repeat;
-  height: 341px;
+  height: 360px;
 }
 
 .faq-section {
