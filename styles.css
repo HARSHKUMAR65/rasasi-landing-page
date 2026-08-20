@@ -121,7 +121,7 @@ img {
   position: relative;
   isolation: isolate;
   min-height: 790px;
-  background: #000 url("assets/hawas-ring.jpg") center bottom / cover no-repeat;
+  background: #000 url("assets/hawas-ring.JPG") center bottom / cover no-repeat;
 }
 
 @media (min-width: 1440px) {
@@ -606,7 +606,7 @@ img {
 }
 
 .awaits-image {
-  background: url("assets/hawas-ring.jpg") center 40% / cover no-repeat;
+  background: url("assets/hawas-ring.JPG") center 40% / cover no-repeat;
   height: 420px;
 }
 
@@ -1065,7 +1065,7 @@ img {
     min-height: 350px;
     display: block;
     position: relative;
-    background: url("assets/hawas-ring.jpg") center top / auto 430px no-repeat;
+    background: url("assets/hawas-ring.JPG") center top / auto 430px no-repeat;
   }
 
   .awaits-section::before {
