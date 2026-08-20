@@ -175,7 +175,7 @@ img {
   background-clip: text;
   font-size: 56px;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -.025em;
 }
 
@@ -362,7 +362,7 @@ img {
   background-clip: text;
   font-size: 48px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -.02em;
 }
 
@@ -624,7 +624,7 @@ img {
   text-align: center;
   font-size: 48px;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -.02em;
 }
 
@@ -645,7 +645,7 @@ img {
   text-align: left;
   font-size: 24px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -885,6 +885,7 @@ img {
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -.018em;
+        
   }
 
   .hero-copy>p {
