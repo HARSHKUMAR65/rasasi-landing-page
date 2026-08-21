@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Terms of Service — The World of Hawas (Rasasi Perfumes)">
-  <title>Terms of Service — The World of Hawas</title>
+  <meta name="description" content="Review the Terms of Service governing your use of the World of Hawas website, including user responsibilities, content, and website access">
+  <title>Terms of Service | World of Hawas by Rasasi</title>
   <link rel="icon" type="image/svg+xml" href="assets/Hawas Logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

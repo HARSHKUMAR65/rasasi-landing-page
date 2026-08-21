@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Regulatory Compliance — The World of Hawas (Rasasi Perfumes)">
-  <title>Regulatory Compliance — The World of Hawas</title>
+  <meta name="description" content="Learn about Rasasi's regulatory compliance practices, policies, and commitments for the World of Hawas">
+  <title>Regulatory Compliance | World of Hawas by Rasasi</title>
   <link rel="icon" type="image/svg+xml" href="assets/Hawas Logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

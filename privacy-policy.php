@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy — The World of Hawas (Rasasi Perfumes)">
-  <title>Privacy Policy — The World of Hawas</title>
+  <meta name="description" content="Learn how Rasasi collects, uses, protects, and manages your personal information when you visit the World of Hawas">
+  <title>Privacy Policy | World of Hawas by Rasasi</title>
   <link rel="icon" type="image/svg+xml" href="assets/Hawas Logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
