@@ -255,6 +255,7 @@ img {
   justify-self: end;
   display: grid;
   gap: 14px;
+  scroll-margin-top: 100px;
 }
 
 .lead-form input,
@@ -276,6 +277,26 @@ img {
 .lead-form select,
 .lead-form textarea {
   padding: 0 16px;
+}
+
+.required-field {
+  position: relative;
+  display: block;
+}
+
+.required-mark {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  color: #ff3b30;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.required-field input {
+  padding-right: 28px;
 }
 
 .lead-form textarea {
@@ -391,30 +412,39 @@ img {
 }
 
 .phone-field {
-  display: flex;
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 70%;
   align-items: center;
   overflow: hidden;
 }
 
-.phone-field span {
-  padding-left: 16px;
-  white-space: nowrap;
-  color: #fff;
+.country-code-select {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
   background: transparent;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: 0 8px 0 12px;
+}
+
+.country-code-select option {
+  color: #000;
 }
 
 .phone-field input {
   border: 0;
   background: transparent;
   min-width: 0;
-  padding-left: 8px;
+  padding-left: 10px;
   height: 100%;
   color: #fff;
-  flex: 1;
+  width: 100%;
+  padding-right: 28px;
+}
+
+.phone-required-mark {
+  right: 14px;
 }
 
 .form-submit {
@@ -526,9 +556,14 @@ img {
 }
 
 .partner-item {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
   min-width: 0;
   text-align: center;
   color: var(--gold);
+  cursor: pointer;
 }
 
 .partner-item svg,
@@ -554,6 +589,16 @@ img {
   font-family: var(--display);
   font-size: 18px;
   line-height: 1.5;
+}
+
+.partner-item:hover p,
+.partner-item:focus-visible p {
+  color: var(--gold-light);
+}
+
+.partner-item:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 8px;
 }
 
 .cards-section {
@@ -592,6 +637,7 @@ img {
   max-width: 520px;
 }
 
+.map-embed,
 .map-card iframe,
 .map-card img {
   width: 100%;
@@ -599,6 +645,20 @@ img {
   border: 0;
   object-fit: cover;
   margin: 0 auto 24px;
+}
+
+.map-embed {
+  position: relative;
+}
+
+.map-embed iframe {
+  margin: 0;
+}
+
+.map-embed a {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .card-button {
@@ -868,12 +928,13 @@ img {
 .footer-bottom {
   grid-column: 1 / -1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   margin-top: 34px;
   font-size: 12px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .footer-bottom p {
@@ -1016,7 +1077,7 @@ img {
 
   .lead-form {
     display: grid;
-    margin-top: 36px;
+    margin-top: 36vh;
   }
 
   .form-row {
@@ -1147,6 +1208,7 @@ img {
     line-height: 1.5;
   }
 
+  .map-embed,
   .map-card iframe,
   .map-card img {
     height: 180px;
