@@ -135,10 +135,7 @@
           throw new Error(result.message || "Unable to submit enquiry.");
         }
 
-        showToast(result.message || "Thank you! Your enquiry has been received.");
-        leadForm.reset();
-        resetCountrySearch();
-        resetServiceSelect();
+        window.location.href = "thank-you.php";
       } catch (error) {
         showToast(error.message || "Unable to submit enquiry. Please try again.");
       } finally {

@@ -7,30 +7,20 @@
   <meta name="description" content="Explore the World of Hawas by Rasasi at ASD Market Week. Discover the iconic Hawas fragrance collection and experience Rasasi at this premier retail event.">
   <title>Explore the World of Hawas at ASD Market Week | Rasasi</title>
   <link rel="icon" type="image/svg+xml" href="assets/Hawas Logo.svg">
+  <link rel="preload" as="image" href="assets/hawas-ring-mobile.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)">
+  <link rel="preload" as="image" href="assets/hawas-ring.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+  </noscript>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            hawasGold: '#C09058',
-            hawasBronze: '#503018'
-          },
-          fontFamily: {
-            display: ['Playfair Display', 'Georgia', 'serif'],
-            body: ['Montserrat', 'Arial', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -234,23 +224,23 @@
       <div class="texture-overlay"></div>
       <div class="page-shell discovery-grid">
         <div class="logo-panel-wrap">
-          <img class="logo-panel" src="assets/Hawas Logo.svg" alt="Hawas Private fragrance identity">
+          <img class="logo-panel" src="assets/Hawas Logo.svg" width="213" height="150" alt="Hawas Private fragrance identity">
         </div>
         <div class="discovery-copy">
           <h2 class="section-title">A Fragrance World Built for<br class="desktop-break"> Discovery</h2>
           <div class="gold-rule"></div>
           <ul class="discovery-list">
-            <li><img src="assets/icons/mdi_customer-service.png" class="discovery-icon" alt=""><span>Multiple customer
+            <li><img src="assets/icons/mdi_customer-service.png" class="discovery-icon" width="21" height="21" loading="lazy" decoding="async" alt=""><span>Multiple customer
                 entry points</span></li>
-            <li><img src="assets/icons/mdi_fragrance (1).svg" class="discovery-icon" alt=""><span>Distinct fragrance
+            <li><img src="assets/icons/mdi_fragrance (1).svg" class="discovery-icon" width="21" height="21" loading="lazy" decoding="async" alt=""><span>Distinct fragrance
                 personalities</span></li>
-            <li><img src="assets/icons/mdi_globe.png" class="discovery-icon" alt=""><span>Customer discovery and
+            <li><img src="assets/icons/mdi_globe.png" class="discovery-icon" width="21" height="21" loading="lazy" decoding="async" alt=""><span>Customer discovery and
                 comparison</span></li>
             <li><img src="assets/icons/material-symbols-light_sell.svg" class="discovery-icon"
-                alt=""><span>Cross-selling potential</span></li>
-            <li><img src="assets/icons/griddy-icons_gift-filled.png" class="discovery-icon" alt=""><span>Gifting
+                width="21" height="21" loading="lazy" decoding="async" alt=""><span>Cross-selling potential</span></li>
+            <li><img src="assets/icons/griddy-icons_gift-filled.png" class="discovery-icon" width="21" height="21" loading="lazy" decoding="async" alt=""><span>Gifting
                 opportunities</span></li>
-            <li><img src="assets/icons/mdi_tick.png" class="discovery-icon" alt=""><span>Seasonal activation
+            <li><img src="assets/icons/mdi_tick.png" class="discovery-icon" width="21" height="21" loading="lazy" decoding="async" alt=""><span>Seasonal activation
                 flexibility</span></li>
           </ul>
         </div>
@@ -263,33 +253,33 @@
         <h2 class="section-title partnership-title">Partnership Opportunities</h2>
         <div class="partnership-grid">
           <button class="partner-item" type="button" data-service="PR/Media">
-            <img src="assets/PartnershipIcons/tdesign_media-library-filled.svg" alt="PR/Media" class="partner-icon">
+            <img src="assets/PartnershipIcons/tdesign_media-library-filled.svg" width="44" height="44" loading="lazy" decoding="async" alt="PR/Media" class="partner-icon">
             <p>PR/Media</p>
           </button>
           <button class="partner-item" type="button" data-service="Influencers/Creators">
             <img src="assets/PartnershipIcons/fluent_people-star-24-filled.svg" alt="Influencers/Creators"
-              class="partner-icon">
+              width="44" height="44" loading="lazy" decoding="async" class="partner-icon">
             <p>Influencers/<br>Creators</p>
           </button>
           <button class="partner-item" type="button" data-service="PreOrder">
-            <img src="assets/PartnershipIcons/material-symbols_order-approve.png" alt="PreOrder" class="partner-icon">
+            <img src="assets/PartnershipIcons/material-symbols_order-approve.png" width="44" height="44" loading="lazy" decoding="async" alt="PreOrder" class="partner-icon">
             <p>PreOrder</p>
           </button>
           <button class="partner-item" type="button" data-service="Fragrance Retailers">
-            <img src="assets/PartnershipIcons/mdi_business.png" alt="Fragrance Retailers" class="partner-icon">
+            <img src="assets/PartnershipIcons/mdi_business.png" width="44" height="44" loading="lazy" decoding="async" alt="Fragrance Retailers" class="partner-icon">
             <p>Fragrance<br> Retailers</p>
           </button>
           <button class="partner-item" type="button" data-service="Distributors &amp; Importers">
             <img src="assets/PartnershipIcons/material-symbols_box-sharp.png" alt="Distributors &amp; Importers"
-              class="partner-icon">
+              width="44" height="44" loading="lazy" decoding="async" class="partner-icon">
             <p>Distributors &amp;<br> Importers</p>
           </button>
           <button class="partner-item" type="button" data-service="E-Commerce Retailers">
-            <img src="assets/PartnershipIcons/mdi_cart.svg" alt="E-Commerce Retailers" class="partner-icon">
+            <img src="assets/PartnershipIcons/mdi_cart.svg" width="44" height="44" loading="lazy" decoding="async" alt="E-Commerce Retailers" class="partner-icon">
             <p>E-Commerce<br> Retailers</p>
           </button>
           <button class="partner-item" type="button" data-service="Hotel Chains">
-            <img src="assets/PartnershipIcons/mdi_hotel.svg" alt="Hotel Chains" class="partner-icon">
+            <img src="assets/PartnershipIcons/mdi_hotel.svg" width="44" height="44" loading="lazy" decoding="async" alt="Hotel Chains" class="partner-icon">
             <p>Hotel Chains</p>
           </button>
         </div>
@@ -303,7 +293,7 @@
           <h2 class="section-title card-title">Find Rasasi at ASD</h2>
           <p>Booth N23306, North Hall, at the Las Vegas Convention Center</p>
           <div class="map-embed">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.545825030872!2d-115.1534581!3d36.13300590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5006494bfaf%3A0xe71a6704d03f4884!2sLas%20Vegas%20Convention%20Center%20North%20Hall!5e1!3m2!1sen!2sin!4v1787290460303!5m2!1sen!2sin" title="Las Vegas Convention Center North Hall Map" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img src="assets/BOOTH NO N23306.png" width="1083" height="576" loading="lazy" decoding="async" alt="ASD Market Week booth N23306 map">
             <a href="https://maps.app.goo.gl/8Awx3L39anqMiDGG6" target="_blank" rel="noopener noreferrer" aria-label="Open Google Map"></a>
           </div>
           <a class="gold-button card-button"

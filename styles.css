@@ -90,7 +90,10 @@ img {
   place-items: center;
   background:
     linear-gradient(rgba(0, 0, 0, .82), rgba(0, 0, 0, .82)),
-    url("assets/texture.jpg") center 62% / cover no-repeat;
+    image-set(
+      url("assets/texture.webp") type("image/webp"),
+      url("assets/texture.jpg") type("image/jpeg")
+    ) center 62% / cover no-repeat;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -113,7 +116,10 @@ img {
 .texture-section {
   position: relative;
   isolation: isolate;
-  background: url("assets/texture.jpg") center / cover no-repeat;
+  background: image-set(
+    url("assets/texture.webp") type("image/webp"),
+    url("assets/texture.jpg") type("image/jpeg")
+  ) center / cover no-repeat;
 }
 
 .texture-overlay {
@@ -129,7 +135,10 @@ img {
   isolation: isolate;
   min-height: 790px;
   overflow: hidden;
-  background: url("assets/hawas-ring.JPG") center bottom / cover no-repeat;
+  background: image-set(
+    url("assets/hawas-ring.webp") type("image/webp"),
+    url("assets/hawas-ring.JPG") type("image/jpeg")
+  ) center bottom / cover no-repeat;
 }
 
 @media (min-width: 1440px) {
@@ -825,8 +834,37 @@ img {
 }
 
 .awaits-image {
-  background: url("assets/Awaits.png") center 40% / cover no-repeat;
+  background: image-set(
+    url("assets/Awaits.webp") type("image/webp"),
+    url("assets/Awaits.png") type("image/png")
+  ) center 40% / cover no-repeat;
   height: 420px;
+}
+
+.thank-you-page {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 120px 0 60px;
+}
+
+.thank-you-panel {
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.thank-you-logo {
+  width: min(360px, 78vw);
+  height: auto;
+}
+
+.thank-you-panel p {
+  max-width: 520px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .faq-section {
@@ -1075,6 +1113,10 @@ img {
 
   .hero-section {
     min-height: 680px;
+    background-image: image-set(
+      url("assets/hawas-ring-mobile.webp") type("image/webp"),
+      url("assets/hawas-ring.JPG") type("image/jpeg")
+    );
     background-size: auto 595px;
     background-position: center top;
   }
@@ -1302,7 +1344,10 @@ img {
     min-height: 350px;
     display: block;
     position: relative;
-    background: url("assets/hawas-ring.JPG") center top / auto 430px no-repeat;
+    background: image-set(
+      url("assets/hawas-ring-mobile.webp") type("image/webp"),
+      url("assets/hawas-ring.JPG") type("image/jpeg")
+    ) center top / auto 430px no-repeat;
   }
 
   .awaits-section::before {

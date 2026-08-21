@@ -43,7 +43,6 @@ function zohoRequest(string $url, array $headers, ?array $payload = null): array
     $body = curl_exec($curl);
     $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     $error = curl_error($curl);
-    curl_close($curl);
 
     if ($body === false) {
         throw new RuntimeException($error !== '' ? $error : 'Zoho request failed.');
@@ -80,7 +79,6 @@ function getZohoAccessToken(array $config): string
     $body = curl_exec($curl);
     $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     $error = curl_error($curl);
-    curl_close($curl);
 
     if ($body === false) {
         throw new RuntimeException($error !== '' ? $error : 'Zoho token request failed.');
