@@ -1022,7 +1022,7 @@ img {
 
   .hero-section {
     min-height: 680px;
-    background-size: auto 800px;
+    background-size: auto 595px;
     background-position: center top;
   }
 
@@ -1077,7 +1077,7 @@ img {
 
   .lead-form {
     display: grid;
-    margin-top: 36vh;
+    margin-top: 15vh;
   }
 
   .form-row {
