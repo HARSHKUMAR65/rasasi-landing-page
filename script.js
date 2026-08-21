@@ -1,7 +1,5 @@
 (() => {
   "use strict";
-  const WHATSAPP_NUMBER = "97143246000";
-  const DEFAULT_MESSAGE = "Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas for my buisness.";
 
   const toast = document.getElementById("toast");
   let toastTimer;
@@ -14,16 +12,38 @@
     toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2600);
   };
 
-  const openWhatsApp = (message) => {
-    const text = encodeURIComponent(message || DEFAULT_MESSAGE);
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
-    const opened = window.open(url, "_blank", "noopener,noreferrer");
-    if (!opened) window.location.href = url;
-  };
+  const serviceWrapper = document.getElementById("serviceSelectWrapper");
+  if (serviceWrapper) {
+    const trigger = document.getElementById("serviceSelectTrigger");
+    const valueSpan = serviceWrapper.querySelector(".custom-select-value");
+    const hiddenInput = document.getElementById("service");
+    const options = serviceWrapper.querySelectorAll(".custom-select-option");
 
-  document.querySelectorAll("[data-whatsapp-message]").forEach((button) => {
-    button.addEventListener("click", () => openWhatsApp(button.dataset.whatsappMessage));
-  });
+    trigger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = serviceWrapper.classList.toggle("is-open");
+      trigger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        const val = option.dataset.value;
+        valueSpan.textContent = val;
+        hiddenInput.value = val;
+        options.forEach((opt) => opt.classList.remove("is-selected"));
+        option.classList.add("is-selected");
+        serviceWrapper.classList.remove("is-open");
+        trigger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!serviceWrapper.contains(e.target)) {
+        serviceWrapper.classList.remove("is-open");
+        trigger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   const leadForm = document.getElementById("leadForm");
   if (leadForm) {
@@ -34,19 +54,8 @@
         return;
       }
 
-      const data = new FormData(leadForm);
-      const message = [
-        "Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas.",
-        `Name: ${data.get("name")}`,
-        `Company: ${data.get("company")}`,
-        `Phone: +91 ${data.get("phone")}`,
-        `Email: ${data.get("email")}`,
-        `Type of Service: ${data.get("service")}`,
-        `Message: ${data.get("message") || "-"}`
-      ].join("\n");
-
-      openWhatsApp(message);
-      showToast("Opening WhatsApp with your enquiry.");
+      showToast("Thank you! Your enquiry has been received.");
+      leadForm.reset();
     });
   }
 
@@ -57,12 +66,12 @@
   if (teamWhatsApp && consent) {
     teamWhatsApp.addEventListener("click", () => {
       if (!consent.checked) {
-        consentError.textContent = "Please accept the WhatsApp communication consent first.";
+        consentError.textContent = "Please accept the communication consent first.";
         consent.focus();
         return;
       }
       consentError.textContent = "";
-      openWhatsApp(DEFAULT_MESSAGE);
+      showToast("Thank you! Our team will reach out to you.");
     });
 
     consent.addEventListener("change", () => {

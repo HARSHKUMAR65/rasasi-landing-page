@@ -131,6 +131,10 @@
       <path
         d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
     </symbol>
+    <symbol id="icon-tiktok" viewBox="0 0 16 16">
+      <path
+        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.396 13.9 4 15 4v2.02c-.752 0-1.503-.2-2.188-.57-.686-.37-.992-.78-1.812-1.45V11a5 5 0 1 1-5-5c.346 0 .684.035 1.01.103V8.18A3.001 3.001 0 1 0 9 11V0z" />
+    </symbol>
   </svg>
 
   <header class="site-header">
@@ -146,8 +150,7 @@
         <div class="hero-copy">
           <h1 class="display-title"><span class="desktop-title-lines">Enter The World<br>Of Hawas</span><span
               class="mobile-title-lines">Enter The<br>World Of<br>Hawas</span></h1>
-          <p>Discover an expanding fragrance universe created for distinctive personalities and new commercial
-           <br> opportunities</p>
+          <p>Discover an expanding fragrance universe created for distinctive personalities and new commercial<br class="desktop-break"> opportunities</p>
           <p>Booth N23306, North Hall, at the Las Vegas Convention Center from 25–27 August 2026.</p>
           <button class="gold-button hero-whatsapp" type="button"
             data-whatsapp-message="Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas for my buisness.">
@@ -175,21 +178,36 @@
             <input id="email" name="email" type="email" placeholder="Email" required>
           </div>
 
-          <label class="sr-only" for="service">Type of Service</label>
-          <select id="service" name="service" required>
-            <option value="" selected disabled>Type of Service</option>
-            <option>PR/Media</option>
-            <option>Influencers/Creators</option>
-            <option>PreOrder</option>
-            <option>Fragrance Retailers</option>
-            <option>Distributors &amp; Importers</option>
-            <option>E-Commerce Retailers</option>
-            <option>Hotel Chains</option>
-          </select>
+          <div class="custom-select-wrapper" id="serviceSelectWrapper">
+            <input type="hidden" id="service" name="service" value="" required>
+            <button type="button" class="custom-select-trigger" id="serviceSelectTrigger" aria-haspopup="listbox" aria-expanded="false">
+              <span class="custom-select-value">Type of Service</span>
+              <svg class="custom-select-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <ul class="custom-select-options" role="listbox" id="serviceSelectOptions">
+              <li class="custom-select-option is-placeholder" role="option" data-value="">Type of Service</li>
+              <li class="custom-select-option" role="option" data-value="PR/Media">PR/Media</li>
+              <li class="custom-select-option" role="option" data-value="Influencers/Creators">Influencers/Creators</li>
+              <li class="custom-select-option" role="option" data-value="PreOrder">PreOrder</li>
+              <li class="custom-select-option" role="option" data-value="Fragrance Retailers">Fragrance Retailers</li>
+              <li class="custom-select-option" role="option" data-value="Distributors &amp; Importers">Distributors &amp; Importers</li>
+              <li class="custom-select-option" role="option" data-value="E-Commerce Retailers">E-Commerce Retailers</li>
+              <li class="custom-select-option" role="option" data-value="Hotel Chains">Hotel Chains</li>
+            </ul>
+          </div>
 
           <label class="sr-only" for="message">Message</label>
           <textarea id="message" name="message" placeholder="Message" rows="3"></textarea>
           <button class="gold-button form-submit" type="submit">Submit</button>
+          <!-- <button class="gold-button mobile-form-whatsapp" type="button"
+            data-whatsapp-message="Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas for my business.">
+            <svg class="whatsapp-icon" aria-hidden="true">
+              <use href="#icon-whatsapp"></use>
+            </svg>
+            <span>Continue on WhatsApp</span>
+          </button> -->
         </form>
       </div>
     </section>
@@ -204,12 +222,18 @@
           <h2 class="section-title">A Fragrance World Built for<br class="desktop-break"> Discovery</h2>
           <div class="gold-rule"></div>
           <ul class="discovery-list">
-            <li><img src="assets/icons/mdi_customer-service.png" class="discovery-icon" alt=""><span>Multiple customer entry points</span></li>
-            <li><img src="assets/icons/mdi_fragrance (1).svg" class="discovery-icon" alt=""><span>Distinct fragrance personalities</span></li>
-            <li><img src="assets/icons/mdi_globe.png" class="discovery-icon" alt=""><span>Customer discovery and comparison</span></li>
-            <li><img src="assets/icons/material-symbols-light_sell.svg" class="discovery-icon" alt=""><span>Cross-selling potential</span></li>
-            <li><img src="assets/icons/griddy-icons_gift-filled.png" class="discovery-icon" alt=""><span>Gifting opportunities</span></li>
-            <li><img src="assets/icons/mdi_tick.png" class="discovery-icon" alt=""><span>Seasonal activation flexibility</span></li>
+            <li><img src="assets/icons/mdi_customer-service.png" class="discovery-icon" alt=""><span>Multiple customer
+                entry points</span></li>
+            <li><img src="assets/icons/mdi_fragrance (1).svg" class="discovery-icon" alt=""><span>Distinct fragrance
+                personalities</span></li>
+            <li><img src="assets/icons/mdi_globe.png" class="discovery-icon" alt=""><span>Customer discovery and
+                comparison</span></li>
+            <li><img src="assets/icons/material-symbols-light_sell.svg" class="discovery-icon"
+                alt=""><span>Cross-selling potential</span></li>
+            <li><img src="assets/icons/griddy-icons_gift-filled.png" class="discovery-icon" alt=""><span>Gifting
+                opportunities</span></li>
+            <li><img src="assets/icons/mdi_tick.png" class="discovery-icon" alt=""><span>Seasonal activation
+                flexibility</span></li>
           </ul>
         </div>
       </div>
@@ -225,8 +249,9 @@
             <p>PR/Media</p>
           </article>
           <article class="partner-item">
-            <img src="assets/PartnershipIcons/fluent_people-star-24-filled.svg" alt="Influencers/Creators" class="partner-icon">
-            <p>Influencers/<br class="desktop-break">Creators</p>
+            <img src="assets/PartnershipIcons/fluent_people-star-24-filled.svg" alt="Influencers/Creators"
+              class="partner-icon">
+            <p>Influencers/<br>Creators</p>
           </article>
           <article class="partner-item">
             <img src="assets/PartnershipIcons/material-symbols_order-approve.png" alt="PreOrder" class="partner-icon">
@@ -234,15 +259,16 @@
           </article>
           <article class="partner-item">
             <img src="assets/PartnershipIcons/mdi_business.png" alt="Fragrance Retailers" class="partner-icon">
-            <p>Fragrance<br class="desktop-break"> Retailers</p>
+            <p>Fragrance<br> Retailers</p>
           </article>
           <article class="partner-item">
-            <img src="assets/PartnershipIcons/material-symbols_box-sharp.png" alt="Distributors &amp; Importers" class="partner-icon">
-            <p>Distributors &amp;<br class="desktop-break"> Importers</p>
+            <img src="assets/PartnershipIcons/material-symbols_box-sharp.png" alt="Distributors &amp; Importers"
+              class="partner-icon">
+            <p>Distributors &amp;<br> Importers</p>
           </article>
           <article class="partner-item">
             <img src="assets/PartnershipIcons/mdi_cart.svg" alt="E-Commerce Retailers" class="partner-icon">
-            <p>E-Commerce<br class="desktop-break"> Retailers</p>
+            <p>E-Commerce<br> Retailers</p>
           </article>
           <article class="partner-item">
             <img src="assets/PartnershipIcons/mdi_hotel.svg" alt="Hotel Chains" class="partner-icon">
@@ -258,7 +284,7 @@
         <article class="glass-card map-card">
           <h2 class="section-title card-title">Find Rasasi at ASD</h2>
           <p>Booth N23306, North Hall, at the Las Vegas Convention Center</p>
-          <img src="assets/booth-map.jpg" alt="Booth location map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.545825030872!2d-115.1534581!3d36.13300590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5006494bfaf%3A0xe71a6704d03f4884!2sLas%20Vegas%20Convention%20Center%20North%20Hall!5e1!3m2!1sen!2sin!4v1787290460303!5m2!1sen!2sin" title="Las Vegas Convention Center North Hall Map" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <a class="gold-button card-button"
             href="https://www.google.com/maps/search/?api=1&amp;query=Las+Vegas+Convention+Center" target="_blank"
             rel="noopener noreferrer">
@@ -313,8 +339,8 @@
       <div class="page-shell faq-shell">
         <h2 class="faq-heading">Frequently Asked Questions</h2>
 
-        <article class="faq-item is-open">
-          <button class="faq-question" type="button" aria-expanded="true">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
             <span>Where can I find Rasasi at ASD Market Week?</span>
             <svg class="faq-chevron">
               <use href="#icon-chevron"></use>
@@ -326,8 +352,8 @@
           </div>
         </article>
 
-        <article class="faq-item is-open visual-down">
-          <button class="faq-question" type="button" aria-expanded="true">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
             <span>How can I book a meeting with the Rasasi team?</span>
             <svg class="faq-chevron">
               <use href="#icon-chevron"></use>
@@ -339,8 +365,8 @@
           </div>
         </article>
 
-        <article class="faq-item is-open visual-down">
-          <button class="faq-question" type="button" aria-expanded="true">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
             <span>Can I request Hawas samples or a buyer portfolio preview?</span>
             <svg class="faq-chevron">
               <use href="#icon-chevron"></use>
@@ -352,8 +378,8 @@
           </div>
         </article>
 
-        <article class="faq-item is-open visual-down">
-          <button class="faq-question" type="button" aria-expanded="true">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
             <span>Can I discuss wholesale or distribution opportunities for Hawas fragrances?</span>
             <svg class="faq-chevron">
               <use href="#icon-chevron"></use>
@@ -375,30 +401,17 @@
     <div class="page-shell footer-shell">
       <div class="footer-logo-column">
         <img src="assets/hawas-private.jpg" alt="Hawas Private">
-      </div>
-      <div class="footer-block">
-        <h3>ASD Market Week</h3>
-        <p>25 - 27 August 2026</p>
-        <p>Booth N23306, North Hall, at the Las Vegas Convention Center</p>
-      </div>
-      <div class="footer-block">
-        <h3>Contact</h3>
-        <p><a href="https://www.worldofhawas.com" target="_blank" rel="noopener noreferrer">www.worldofhawas.com</a></p>
-        <p><a href="tel:+97143246000">+971 4 324 6000</a></p>
-        <p><a href="mailto:info@worldofhawas.com">info@worldofhawas.com</a></p>
-      </div>
-      <div class="footer-social-column">
-        <div class="socials" aria-label="Social links">
-          <a href="#" aria-label="Facebook"><svg>
+        <div class="socials footer-socials" aria-label="Social links">
+          <a href="https://www.facebook.com/profile.php?id=61593603328161" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg>
               <use href="#icon-facebook"></use>
             </svg></a>
-          <a href="#" aria-label="Instagram"><svg>
+          <a href="https://www.instagram.com/worldofhawas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg>
               <use href="#icon-instagram"></use>
             </svg></a>
-          <a href="#" aria-label="X"><svg>
-              <use href="#icon-x"></use>
+          <a href="https://www.tiktok.com/@world.of.hawas?_r=1&amp;_t=ZS-993n6PqvIQe" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg>
+              <use href="#icon-tiktok"></use>
             </svg></a>
-          <a href="#" aria-label="LinkedIn"><svg>
+          <a href="https://www.linkedin.com/company/world-of-hawas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg>
               <use href="#icon-linkedin"></use>
             </svg></a>
           <a href="#" aria-label="YouTube"><svg>
@@ -406,13 +419,27 @@
             </svg></a>
         </div>
       </div>
+      <div class="footer-block">
+        <h3>ASD Market Week</h3>
+        <p>25-27 AUGUST 2026</p>
+        <p>BOOTH N23306, North Hall</p>
+        <p>Las Vegas convention center</p>
+        <p>Las Vegas, NV</p>
+      </div>
+      <div class="footer-block">
+        <h3>Contact</h3>
+        <p><a href="https://www.worldofhawas.com" target="_blank" rel="noopener noreferrer">www.worldofhawas.com</a></p>
+        <p><a href="tel:+97143246000">+971 4 324 6000</a></p>
+        <p><a href="mailto:info@worldofhawas.com">info@worldofhawas.com</a></p>
+      </div>
+      <div class="footer-block">
+        <h3>Legal</h3>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p><a href="terms-of-service.html">Terms of Service</a></p>
+        <p><a href="regulatory-compliance.html">Regulatory Compliance</a></p>
+      </div>
       <div class="footer-bottom">
         <p>© 2026 Prism. All rights reserved.</p>
-        <nav aria-label="Legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Regulatory Compliance</a>
-        </nav>
       </div>
     </div>
   </footer>
