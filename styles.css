@@ -106,7 +106,7 @@ img {
 .header-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -469,12 +469,15 @@ img {
   max-width: 620px;
   height: 470px;
   overflow: hidden;
+  display: grid;
+  place-items: center;
 }
 
 .logo-panel {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -877,7 +880,7 @@ img {
 .footer-logo-column img {
   width: 170px;
   height: 104px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .footer-block h3 {
@@ -1114,7 +1117,7 @@ img {
   }
 
   .logo-panel {
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .discovery-copy {
