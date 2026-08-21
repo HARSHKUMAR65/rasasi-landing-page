@@ -29,6 +29,7 @@
   ];
 
   const countryCodeSelect = document.getElementById("countryCode");
+  let resetCountrySearch = () => {};
   if (countryCodeSelect) {
     const getFlag = (region) => region
       .toUpperCase()
@@ -41,6 +42,10 @@
       option.selected = region === "US";
       countryCodeSelect.append(option);
     });
+
+    resetCountrySearch = () => {
+      countryCodeSelect.value = "+1";
+    };
   }
 
   const serviceWrapper = document.getElementById("serviceSelectWrapper");
@@ -92,16 +97,54 @@
 
   const leadForm = document.getElementById("leadForm");
   if (leadForm) {
-    leadForm.addEventListener("submit", (event) => {
+    const lettersOnlyFields = [document.getElementById("name"), document.getElementById("company")].filter(Boolean);
+    const phoneInput = document.getElementById("phone");
+
+    lettersOnlyFields.forEach((field) => {
+      field.addEventListener("input", () => {
+        field.value = field.value.replace(/[^A-Za-z ]/g, "");
+      });
+    });
+
+    phoneInput?.addEventListener("input", () => {
+      phoneInput.value = phoneInput.value.replace(/[^0-9]/g, "").slice(0, 15);
+    });
+
+    leadForm.addEventListener("submit", async (event) => {
       event.preventDefault();
       if (!leadForm.checkValidity()) {
         leadForm.reportValidity();
         return;
       }
 
-      showToast("Thank you! Your enquiry has been received.");
-      leadForm.reset();
-      resetServiceSelect();
+      const submitButton = leadForm.querySelector(".form-submit");
+      submitButton.disabled = true;
+      submitButton.classList.add("is-loading");
+
+      try {
+        const response = await fetch("submit-lead.php", {
+          method: "POST",
+          body: new FormData(leadForm),
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+        const result = await response.json();
+
+        if (!response.ok || !result.ok) {
+          throw new Error(result.message || "Unable to submit enquiry.");
+        }
+
+        showToast(result.message || "Thank you! Your enquiry has been received.");
+        leadForm.reset();
+        resetCountrySearch();
+        resetServiceSelect();
+      } catch (error) {
+        showToast(error.message || "Unable to submit enquiry. Please try again.");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.classList.remove("is-loading");
+      }
     });
   }
 

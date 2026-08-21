@@ -1,13 +1,13 @@
-# The World of Hawas landing page
+﻿# The World of Hawas landing page
 
-Responsive recreation of the supplied Rasasi / Hawas landing-page design using HTML, Tailwind CSS, custom CSS, and vanilla JavaScript.
+Responsive Rasasi / Hawas landing page converted to plain PHP, with custom CSS and vanilla JavaScript.
 
 ## Run it
 
-Open `index.html` directly in a browser, or run a local server:
+Run it with PHP's built-in server:
 
 ```bash
-python3 -m http.server 8080
+php -S localhost:8080
 ```
 
 Then open `http://localhost:8080`.
@@ -15,11 +15,26 @@ Then open `http://localhost:8080`.
 ## Included behavior
 
 - Responsive desktop and mobile layout
-- Lead form that creates a pre-filled WhatsApp enquiry
+- Lead form that posts to `submit-lead.php`
 - Consent-controlled WhatsApp contact card
 - FAQ accordion
 - Booth map button
 - Accessible labels, focus styles, and reduced-motion support
+
+Submitted leads are stored in `data/leads.jsonl`.
+
+## Zoho CRM setup
+
+Copy `zoho-config.example.php` to `zoho-config.php` and fill in:
+
+- Zoho account/API domains for your data center
+- Client ID
+- Client Secret
+- Refresh Token
+- CRM module, usually `Leads`
+- Field API names for custom fields such as `Type_of_Service`
+
+The lead form always saves a local backup in `data/leads.jsonl`. If Zoho fails, the visitor still sees a success message and the error is logged in `data/zoho-errors.log`.
 
 ## Production setup
 

@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy — The World of Hawas (Rasasi Perfumes)">
-  <title>Privacy Policy — The World of Hawas</title>
+  <meta name="description" content="Terms of Service — The World of Hawas (Rasasi Perfumes)">
+  <title>Terms of Service — The World of Hawas</title>
   <link rel="icon" type="image/svg+xml" href="assets/Hawas Logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
   </svg>
 
   <header class="site-header">
-    <a href="index.html" class="header-logo" aria-label="The World of Hawas home">
+    <a href="index.php" class="header-logo" aria-label="The World of Hawas home">
       <img src="assets/Hawas Logo.svg" alt="Hawas Private">
     </a>
   </header>
@@ -60,36 +60,39 @@
   <main class="texture-section">
     <div class="texture-overlay"></div>
     <div class="page-shell legal-content">
-      <a href="index.html" class="back-link"><span class="back-arrow">&larr;</span> Back to Home</a>
-      <h1 class="section-title">Privacy Policy</h1>
+      <a href="index.php" class="back-link"><span class="back-arrow">&larr;</span> Back to Home</a>
+      <h1 class="section-title">Terms of Service</h1>
       <div class="gold-rule"></div>
 
-      <h2>1. What We Collect</h2>
-      <p>When you browse this page, book a buyer meeting, request samples, or ask about wholesale and distribution, we collect the details you provide, such as your name, company, email, phone number, and meeting preferences. We also collect basic browsing data, including device type, pages viewed, and general location, through standard website analytics tools.</p>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing this page or using its features, including booth information, meeting booking, or sample requests, you agree to these Terms of Service. If you do not agree, please do not use this page.</p>
 
-      <h2>2. How We Use It</h2>
-      <p>We use this information to confirm booth and meeting bookings, respond to sample and portfolio requests, evaluate wholesale and distribution inquiries, and send relevant follow-up communications. We may also use aggregated, non-identifying data to understand how visitors use this page.</p>
+      <h2>2. Eligibility</h2>
+      <p>This page is intended for trade buyers, retailers, distributors, and industry professionals attending or engaging with ASD Market Week. By using it, you confirm you are acting in a legitimate business capacity or are otherwise authorized to do so.</p>
 
-      <h2>3. Sharing</h2>
-      <p>We share information only with Rasasi team members and trusted service providers who help us run this page, manage bookings, or process inquiries, such as scheduling, hosting, and email tools. We do not sell your personal information.</p>
+      <h2>3. Use of This Page</h2>
+      <p>You agree to provide accurate information when booking meetings or requesting samples and portfolios, and to use this page only for lawful purposes. You may not attempt to disrupt, copy, or misuse the page's content or functionality without our written permission.</p>
 
-      <h2>4. Cookies</h2>
-      <p>This page may use cookies or similar technologies to remember your preferences and understand site performance. You can control cookies through your browser settings; disabling them may limit some page features.</p>
+      <h2>4. Bookings and Requests</h2>
+      <p>Buyer meetings, sample requests, and portfolio previews are subject to availability, business qualification, and confirmation by the Rasasi team. Submitting a request does not guarantee fulfillment.</p>
 
-      <h2>5. Data Retention and Security</h2>
-      <p>We retain your information only as long as needed for the purposes above and take reasonable measures to protect it. No online system is completely secure, and we encourage you to avoid sharing sensitive information through unsecured channels.</p>
+      <h2>5. Intellectual Property</h2>
+      <p>All content on this page, including the Hawas or The World of Hawas name, branding, imagery, and text, is the property of Rasasi and may not be reproduced or used without prior written consent.</p>
 
-      <h2>6. Your Choices</h2>
-      <p>You may ask us to access, correct, or delete your personal information, or to stop receiving marketing communications from us, at any time by contacting the Rasasi team through the details on this page.</p>
+      <h2>6. Accuracy of Information</h2>
+      <p>We aim to keep booth, schedule, and product information accurate, but details such as booth number, hall, or availability may change without notice. Please confirm details on-site if anything appears inconsistent.</p>
 
-      <h2>7. Third-Party Links</h2>
-      <p>This page may link to third-party sites. We are not responsible for their content or privacy practices, and encourage you to review their policies separately.</p>
+      <h2>7. Limitation of Liability</h2>
+      <p>This page and its content are provided as is, without warranties of any kind. Rasasi is not liable for any indirect or incidental issues arising from your use of this page or reliance on the information provided here.</p>
 
-      <h2>8. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. Continued use of this page after changes are posted means you accept the updated policy.</p>
+      <h2>8. Third-Party Links</h2>
+      <p>Any third-party links on this page are provided for convenience. We do not control and are not responsible for the content or practices of external sites.</p>
 
-      <h2>9. Contact</h2>
-      <p>Questions about this policy or your personal information can be directed to the Rasasi team through the contact details provided on this page.</p>
+      <h2>9. Changes to These Terms</h2>
+      <p>We may revise these Terms at any time by updating this page. Continued use after changes are posted constitutes acceptance of the revised Terms.</p>
+
+      <h2>10. Contact</h2>
+      <p>For questions about these Terms, please reach out to the Rasasi team using the contact details provided on this page.</p>
     </div>
   </main>
 
@@ -131,9 +134,9 @@
       </div>
       <div class="footer-block">
         <h3>Legal</h3>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
-        <p><a href="terms-of-service.html">Terms of Service</a></p>
-        <p><a href="regulatory-compliance.html">Regulatory Compliance</a></p>
+        <p><a href="privacy-policy.php">Privacy Policy</a></p>
+        <p><a href="terms-of-service.php">Terms of Service</a></p>
+        <p><a href="regulatory-compliance.php">Regulatory Compliance</a></p>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Prism. All rights reserved.</p>
