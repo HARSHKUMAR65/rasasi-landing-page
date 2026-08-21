@@ -30,7 +30,7 @@
   <main class="thank-you-page texture-section">
     <div class="texture-overlay"></div>
     <section class="page-shell thank-you-panel">
-      <img class="thank-you-logo" src="assets/Hawas Logo.svg" width="213" height="150" alt="Hawas Private">
+      <!-- <img class="thank-you-logo" src="assets/Hawas Logo.svg" width="213" height="150" alt="Hawas Private"> -->
       <h1 class="section-title">Thank You</h1>
       <p>Our team will reach you shortly.</p>
       <a class="gold-button" href="index.php">Back to Home</a>
