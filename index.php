@@ -28,7 +28,7 @@
       rel="stylesheet">
   </noscript>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.min.css">
 </head>
 
 <body>
@@ -304,7 +304,7 @@
           <h2 class="section-title card-title">Find Rasasi at ASD</h2>
           <p>Booth N23306, North Hall, at the Las Vegas Convention Center</p>
           <div class="map-embed">
-            <img src="assets/BOOTH NO N23306.png" width="1083" height="576" loading="lazy" decoding="async" alt="ASD Market Week booth N23306 map">
+            <img src="assets/booth-map.webp" width="1083" height="576" loading="lazy" decoding="async" alt="ASD Market Week booth N23306 map">
             <a href="https://maps.app.goo.gl/8Awx3L39anqMiDGG6" target="_blank" rel="noopener noreferrer" aria-label="Open Google Map"></a>
           </div>
           <a class="gold-button card-button"
@@ -467,7 +467,7 @@
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
