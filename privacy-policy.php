@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -51,7 +51,7 @@
   </svg>
 
   <header class="site-header">
-    <a href="index.html" class="header-logo" aria-label="The World of Hawas home">
+    <a href="index.php" class="header-logo" aria-label="The World of Hawas home">
       <img src="assets/hawas-private.jpg" alt="Hawas Private">
     </a>
   </header>
@@ -59,7 +59,7 @@
   <main class="texture-section">
     <div class="texture-overlay"></div>
     <div class="page-shell legal-content">
-      <a href="index.html" class="back-link"><span class="back-arrow">&larr;</span> Back to Home</a>
+      <a href="index.php" class="back-link"><span class="back-arrow">&larr;</span> Back to Home</a>
       <h1 class="section-title">Privacy Policy</h1>
       <div class="gold-rule"></div>
 
@@ -130,9 +130,9 @@
       </div>
       <div class="footer-block">
         <h3>Legal</h3>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
-        <p><a href="terms-of-service.html">Terms of Service</a></p>
-        <p><a href="regulatory-compliance.html">Regulatory Compliance</a></p>
+        <p><a href="privacy-policy.php">Privacy Policy</a></p>
+        <p><a href="terms-of-service.php">Terms of Service</a></p>
+        <p><a href="regulatory-compliance.php">Regulatory Compliance</a></p>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Prism. All rights reserved.</p>
@@ -142,3 +142,4 @@
 </body>
 
 </html>
+

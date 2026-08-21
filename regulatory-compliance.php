@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Terms of Service — The World of Hawas (Rasasi Perfumes)">
-  <title>Terms of Service — The World of Hawas</title>
+  <meta name="description" content="Regulatory Compliance — The World of Hawas (Rasasi Perfumes)">
+  <title>Regulatory Compliance — The World of Hawas</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
   </svg>
 
   <header class="site-header">
-    <a href="index.html" class="header-logo" aria-label="The World of Hawas home">
+    <a href="index.php" class="header-logo" aria-label="The World of Hawas home">
       <img src="assets/hawas-private.jpg" alt="Hawas Private">
     </a>
   </header>
@@ -59,39 +59,27 @@
   <main class="texture-section">
     <div class="texture-overlay"></div>
     <div class="page-shell legal-content">
-      <a href="index.html" class="back-link"><span class="back-arrow">&larr;</span> Back to Home</a>
-      <h1 class="section-title">Terms of Service</h1>
+      <a href="index.php" class="back-link"><span class="back-arrow">&larr;</span> Back to Home</a>
+      <h1 class="section-title">Regulatory Compliance</h1>
       <div class="gold-rule"></div>
 
-      <h2>1. Acceptance of Terms</h2>
-      <p>By accessing this page or using its features, including booth information, meeting booking, or sample requests, you agree to these Terms of Service. If you do not agree, please do not use this page.</p>
+      <h2>Our Commitment</h2>
+      <p>Rasasi is committed to conducting its business, including its participation in trade events such as ASD Market Week, in line with applicable laws and regulations in the markets where it operates and sells its products.</p>
 
-      <h2>2. Eligibility</h2>
-      <p>This page is intended for trade buyers, retailers, distributors, and industry professionals attending or engaging with ASD Market Week. By using it, you confirm you are acting in a legitimate business capacity or are otherwise authorized to do so.</p>
+      <h2>Product Standards</h2>
+      <p>Our fragrance products are developed and manufactured with attention to applicable regional and international quality, labeling, and safety standards relevant to the cosmetics and fragrance industry.</p>
 
-      <h2>3. Use of This Page</h2>
-      <p>You agree to provide accurate information when booking meetings or requesting samples and portfolios, and to use this page only for lawful purposes. You may not attempt to disrupt, copy, or misuse the page's content or functionality without our written permission.</p>
+      <h2>Data Protection</h2>
+      <p>We handle personal information collected through this page and related buyer interactions in a manner consistent with applicable data protection principles, as further described in our Privacy Policy.</p>
 
-      <h2>4. Bookings and Requests</h2>
-      <p>Buyer meetings, sample requests, and portfolio previews are subject to availability, business qualification, and confirmation by the Rasasi team. Submitting a request does not guarantee fulfillment.</p>
+      <h2>Trade and Commercial Practices</h2>
+      <p>Our wholesale, distribution, and buyer engagement activities are conducted in accordance with applicable trade, import and export, and commercial regulations in the relevant jurisdictions.</p>
 
-      <h2>5. Intellectual Property</h2>
-      <p>All content on this page, including the Hawas or The World of Hawas name, branding, imagery, and text, is the property of Rasasi and may not be reproduced or used without prior written consent.</p>
+      <h2>Ongoing Review</h2>
+      <p>Rasasi periodically reviews its policies and practices to help ensure continued alignment with evolving regulatory expectations across the markets it serves.</p>
 
-      <h2>6. Accuracy of Information</h2>
-      <p>We aim to keep booth, schedule, and product information accurate, but details such as booth number, hall, or availability may change without notice. Please confirm details on-site if anything appears inconsistent.</p>
-
-      <h2>7. Limitation of Liability</h2>
-      <p>This page and its content are provided as is, without warranties of any kind. Rasasi is not liable for any indirect or incidental issues arising from your use of this page or reliance on the information provided here.</p>
-
-      <h2>8. Third-Party Links</h2>
-      <p>Any third-party links on this page are provided for convenience. We do not control and are not responsible for the content or practices of external sites.</p>
-
-      <h2>9. Changes to These Terms</h2>
-      <p>We may revise these Terms at any time by updating this page. Continued use after changes are posted constitutes acceptance of the revised Terms.</p>
-
-      <h2>10. Contact</h2>
-      <p>For questions about these Terms, please reach out to the Rasasi team using the contact details provided on this page.</p>
+      <h2>Note</h2>
+      <p>This document provides a general, non-exhaustive overview of our compliance approach and does not constitute legal advice or a representation of certification under any specific regulatory scheme. For jurisdiction-specific or product-specific compliance documentation, please contact the Rasasi team directly.</p>
     </div>
   </main>
 
@@ -133,9 +121,9 @@
       </div>
       <div class="footer-block">
         <h3>Legal</h3>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
-        <p><a href="terms-of-service.html">Terms of Service</a></p>
-        <p><a href="regulatory-compliance.html">Regulatory Compliance</a></p>
+        <p><a href="privacy-policy.php">Privacy Policy</a></p>
+        <p><a href="terms-of-service.php">Terms of Service</a></p>
+        <p><a href="regulatory-compliance.php">Regulatory Compliance</a></p>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Prism. All rights reserved.</p>
@@ -145,3 +133,4 @@
 </body>
 
 </html>
+

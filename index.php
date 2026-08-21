@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -153,7 +153,7 @@
           <p>Discover an expanding fragrance universe created for distinctive personalities and new commercial<br class="desktop-break"> opportunities</p>
           <p>Booth N23306, North Hall, at the Las Vegas Convention Center from 25–27 August 2026.</p>
           <button class="gold-button hero-whatsapp" type="button"
-            data-whatsapp-message="Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas for my buisness.">
+            data-whatsapp-message="Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas for my business.">
             <svg class="whatsapp-icon" aria-hidden="true">
               <use href="#icon-whatsapp"></use>
             </svg>
@@ -164,24 +164,27 @@
         <form id="leadForm" class="lead-form" novalidate>
           <label class="sr-only" for="name">Name</label>
           <span class="required-field">
-            <input id="name" name="name" type="text" placeholder="Name" required>
+            <input id="name" name="name" type="text" placeholder="Name" required pattern="[A-Za-z ]{3,}" title="Minimum 3 letters required">
             <span class="required-mark" aria-hidden="true">*</span>
           </span>
 
           <label class="sr-only" for="company">Company Name</label>
-          <input id="company" name="company" type="text" placeholder="Company Name">
+          <span class="required-field">
+            <input id="company" name="company" type="text" placeholder="Company Name" required pattern="[A-Za-z ]{3,}" title="Minimum 3 letters required">
+            <span class="required-mark" aria-hidden="true">*</span>
+          </span>
 
           <div class="form-row">
             <div class="phone-field">
               <label class="sr-only" for="countryCode">Country code</label>
               <select id="countryCode" name="countryCode" class="country-code-select" aria-label="Country code" required></select>
               <label class="sr-only" for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="Phone" required>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" minlength="7" maxlength="15" pattern="[0-9]{7,15}" placeholder="Phone" title="Enter a valid phone number, 7 to 15 digits" required>
               <span class="required-mark phone-required-mark" aria-hidden="true">*</span>
             </div>
             <label class="sr-only" for="email">Email</label>
             <span class="required-field">
-              <input id="email" name="email" type="email" placeholder="Email" required>
+              <input id="email" name="email" type="email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
               <span class="required-mark" aria-hidden="true">*</span>
             </span>
           </div>
@@ -207,8 +210,14 @@
           </div>
 
           <label class="sr-only" for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Message" rows="3"></textarea>
-          <button class="gold-button form-submit" type="submit">Submit</button>
+          <textarea id="message" name="message" placeholder="Message" rows="3" maxlength="500"></textarea>
+          <button class="gold-button form-submit" type="submit">
+            <span class="submit-label">Submit</span>
+            <span class="submit-loading" aria-hidden="true">
+              <span class="submit-spinner"></span>
+              <span>Submitting</span>
+            </span>
+          </button>
           <!-- <button class="gold-button mobile-form-whatsapp" type="button"
             data-whatsapp-message="Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas for my business.">
             <svg class="whatsapp-icon" aria-hidden="true">
@@ -310,7 +319,7 @@
           <h2 class="section-title card-title">Continue on WhatsApp?</h2>
           <p>Ask about the Hawas portfolio, samples, distribution opportunities or meeting availability.</p>
           <div class="whatsapp-message">Hello Rasasi, I am attending ASD Market Week and would like to discuss The World
-            of Hawas for my buisness.</div>
+            of Hawas for my business.</div>
           <label class="consent-row">
             <input id="consent" type="checkbox">
             <span class="custom-checkbox" aria-hidden="true"></span>
@@ -445,9 +454,9 @@
       </div>
       <div class="footer-block">
         <h3>Legal</h3>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
-        <p><a href="terms-of-service.html">Terms of Service</a></p>
-        <p><a href="regulatory-compliance.html">Regulatory Compliance</a></p>
+        <p><a href="privacy-policy.php">Privacy Policy</a></p>
+        <p><a href="terms-of-service.php">Terms of Service</a></p>
+        <p><a href="regulatory-compliance.php">Regulatory Compliance</a></p>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Prism Digital. All rights reserved.</p>
@@ -460,3 +469,4 @@
 </body>
 
 </html>
+

@@ -464,6 +464,42 @@ img {
 .form-submit {
   width: 100%;
   margin-top: 2px;
+  position: relative;
+}
+
+.form-submit .submit-loading {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-submit.is-loading .submit-label {
+  display: none;
+}
+
+.form-submit.is-loading .submit-loading {
+  display: inline-flex;
+}
+
+.form-submit:disabled {
+  cursor: wait;
+  opacity: .88;
+}
+
+.submit-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 0, 0, .35);
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: submitSpin .8s linear infinite;
+}
+
+@keyframes submitSpin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .discovery-section {
