@@ -89,7 +89,7 @@
     <div class="page-shell footer-shell">
       <div class="footer-logo-column">
         <img src="assets/Hawas Logo.svg" alt="Hawas Private">
-        <div class="socials footer-socials" aria-label="Social links">
+        <!-- <div class="socials footer-socials" aria-label="Social links">
           <a href="https://www.facebook.com/profile.php?id=61593603328161" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg>
               <use href="#icon-facebook"></use>
             </svg></a>
@@ -105,7 +105,7 @@
           <a href="#" aria-label="YouTube"><svg>
               <use href="#icon-youtube"></use>
             </svg></a>
-        </div>
+        </div> -->
       </div>
       <div class="footer-block">
         <h3>ASD Market Week</h3>
