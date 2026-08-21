@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Enter The World Of Hawas — ASD Market Week landing page.">
-  <title>The World of Hawas</title>
+  <meta name="description" content="Explore the World of Hawas by Rasasi at ASD Market Week. Discover the iconic Hawas fragrance collection and experience Rasasi at this premier retail event.">
+  <title>Explore the World of Hawas at ASD Market Week | Rasasi</title>
   <link rel="icon" type="image/svg+xml" href="assets/Hawas Logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -450,7 +450,7 @@
       <div class="footer-block">
         <h3>Contact</h3>
         <p><a href="https://www.worldofhawas.com" target="_blank" rel="noopener noreferrer">www.worldofhawas.com</a></p>
-        <p><a href="tel:+97143246000">+971 4 324 6000</a></p>
+        <p><a href="tel:+97148365900,281">+971 4 836 5900 Ext. 281</a></p>
         <p><a href="mailto:info@worldofhawas.com">info@worldofhawas.com</a></p>
       </div>
       <div class="footer-block">
