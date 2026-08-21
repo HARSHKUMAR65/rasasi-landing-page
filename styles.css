@@ -1117,7 +1117,7 @@ img {
       url("assets/hawas-ring-mobile.webp") type("image/webp"),
       url("assets/hawas-ring.JPG") type("image/jpeg")
     );
-    background-size: auto 595px;
+    background-size: auto 524px;
     background-position: center top;
   }
 
@@ -1164,7 +1164,7 @@ img {
   .hero-whatsapp {
     min-width: 0;
     width: 258px;
-    margin-top: 10px;
+    margin-top: 68px;
     padding-left: 18px;
     padding-right: 18px;
     font-size: 15px;
@@ -1172,7 +1172,7 @@ img {
 
   .lead-form {
     display: grid;
-    margin-top: 15vh;
+    margin-top: 3vh;
   }
 
   .form-row {
