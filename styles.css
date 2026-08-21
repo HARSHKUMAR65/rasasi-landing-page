@@ -425,11 +425,25 @@ img {
   border: 0;
   background: transparent;
   color: #fff;
+  color-scheme: dark;
+  accent-color: var(--gold);
   padding: 0 8px 0 12px;
+  cursor: pointer;
 }
 
 .country-code-select option {
-  color: #000;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.country-code-select option:hover,
+.country-code-select option:focus,
+.country-code-select option:active,
+.country-code-select option:checked {
+  background-color: #C09058 !important;
+  background: #C09058 !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
 }
 
 .phone-field input {
