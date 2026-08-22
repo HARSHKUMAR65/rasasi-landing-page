@@ -3,6 +3,8 @@
 
   const toast = document.getElementById("toast");
   let toastTimer;
+  const WHATSAPP_NUMBER = "971555891607";
+  const DEFAULT_WHATSAPP_MESSAGE = "Hello, Rasasi! I would like to know more about this";
 
   const showToast = (message) => {
     if (!toast) return;
@@ -10,6 +12,13 @@
     toast.classList.add("is-visible");
     window.clearTimeout(toastTimer);
     toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2600);
+  };
+
+  const getWhatsAppUrl = (message = DEFAULT_WHATSAPP_MESSAGE) =>
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+  const openWhatsApp = (message) => {
+    window.open(getWhatsAppUrl(), "_blank", "noopener,noreferrer");
   };
 
   const countryCodes = [
@@ -149,6 +158,12 @@
   const teamWhatsApp = document.getElementById("teamWhatsApp");
   const consentError = document.getElementById("consentError");
 
+  document.querySelectorAll("[data-whatsapp-message]").forEach((button) => {
+    button.addEventListener("click", () => {
+      openWhatsApp(button.dataset.whatsappMessage);
+    });
+  });
+
   if (teamWhatsApp && consent) {
     teamWhatsApp.addEventListener("click", () => {
       if (!consent.checked) {
@@ -157,7 +172,7 @@
         return;
       }
       consentError.textContent = "";
-      showToast("Thank you! Our team will reach out to you.");
+      openWhatsApp();
     });
 
     consent.addEventListener("change", () => {
