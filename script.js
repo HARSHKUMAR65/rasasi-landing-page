@@ -4,7 +4,7 @@
   const toast = document.getElementById("toast");
   let toastTimer;
   const WHATSAPP_NUMBER = "971555891607";
-  const DEFAULT_WHATSAPP_MESSAGE = "Hello, Rasasi! I would like to know more about this";
+  const DEFAULT_WHATSAPP_MESSAGE = "I've visited your website https://worldofhawas.com/";
 
   const showToast = (message) => {
     if (!toast) return;
