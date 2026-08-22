@@ -17,8 +17,8 @@
   const getWhatsAppUrl = (message = DEFAULT_WHATSAPP_MESSAGE) =>
     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
-  const openWhatsApp = (message) => {
-    window.open(getWhatsAppUrl(), "_blank", "noopener,noreferrer");
+  const openWhatsApp = () => {
+    window.location.href = getWhatsAppUrl();
   };
 
   const countryCodes = [

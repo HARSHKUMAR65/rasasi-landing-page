@@ -1,4 +1,9 @@
 ﻿<!doctype html>
+<?php
+$whatsappUrl = 'https://wa.me/971555891607?text=' . rawurlencode("I've visited your website https://worldofhawas.com/");
+$stylesVersion = filemtime(__DIR__ . '/styles.min.css');
+$scriptVersion = filemtime(__DIR__ . '/script.js');
+?>
 <html lang="en">
 
 <head>
@@ -28,7 +33,7 @@
       rel="stylesheet">
   </noscript>
 
-  <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="styles.min.css?v=<?= $stylesVersion ?>">
 </head>
 
 <body>
@@ -154,13 +159,12 @@
               class="mobile-title-lines">Enter The<br>World Of<br>Hawas</span></h1>
           <p>Discover an expanding fragrance universe created for distinctive personalities and new commercial<br class="desktop-break"> opportunities</p>
           <p>Booth N23306, North Hall, at the Las Vegas Convention Center from 25–27 August 2026.</p>
-          <button class="gold-button hero-whatsapp" type="button"
-            data-whatsapp-message="Hello Rasasi, I am attending ASD Market Week and would like to discuss The World of Hawas for my business.">
+          <a class="gold-button hero-whatsapp" href="<?= htmlspecialchars($whatsappUrl, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">
             <svg class="whatsapp-icon" aria-hidden="true">
               <use href="#icon-whatsapp"></use>
             </svg>
             <span>Continue on WhatsApp</span>
-          </button>
+          </a>
         </div>
 
         <form id="leadForm" class="lead-form" novalidate>
@@ -345,13 +349,12 @@
           <h2 class="section-title"><span class="desktop-title-lines">The World Of Hawas<br>Awaits You</span><span
               class="mobile-title-lines">The World Of<br>Hawas Awaits You</span></h2>
           <p>Discover the portfolio, Meet the Rasasi team.<br>Explore the opportunity for your market.</p>
-          <button class="gold-button" type="button"
-            data-whatsapp-message="Hello Rasasi, I would like to discover The World of Hawas portfolio and explore the opportunity for my market.">
+          <a class="gold-button" href="<?= htmlspecialchars($whatsappUrl, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">
             <svg class="whatsapp-icon" aria-hidden="true">
               <use href="#icon-whatsapp"></use>
             </svg>
             <span>Continue on WhatsApp</span>
-          </button>
+          </a>
         </div>
       </div>
       <div class="awaits-image" role="img" aria-label="The World of Hawas sculptural fragrance form"></div>
@@ -467,7 +470,7 @@
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=<?= $scriptVersion ?>" defer></script>
 </body>
 
 </html>
