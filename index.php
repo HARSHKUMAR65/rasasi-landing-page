@@ -19,8 +19,7 @@ $scriptVersion = filemtime(__DIR__ . '/script.js');
   <meta name="description" content="Explore the World of Hawas by Rasasi at ASD Market Week. Discover the iconic Hawas fragrance collection and experience Rasasi at this premier retail event.">
   <title>Explore the World of Hawas at ASD Market Week | Rasasi</title>
   <link rel="icon" type="image/svg+xml" href="assets/Hawas Logo.svg">
-  <link rel="preload" as="image" href="assets/hawas-ring-mobile.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)">
-  <link rel="preload" as="image" href="assets/hawas-ring.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="assets/Hero.jpeg" type="image/jpeg" fetchpriority="high">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
