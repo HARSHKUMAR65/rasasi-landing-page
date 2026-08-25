@@ -1107,7 +1107,7 @@ img {
     background-image: image-set(
       url("assets/Hero.jpeg") type("image/jpeg")
     );
-    background-size: 100% auto;
+    background-size: auto 720px;
     background-position: center top;
   }
 
@@ -1115,7 +1115,7 @@ img {
   .hero-inner {
     min-height: 680px;
     display: block;
-    padding-top: 116px;
+    padding-top: 720px;
     padding-bottom: 40px;
   }
 
@@ -1135,7 +1135,7 @@ img {
 
   .display-title {
     margin-bottom: 28px;
-    font-size: 40px;
+    font-size: 65px;
     line-height: 1.2;
     letter-spacing: -.018em;
 
